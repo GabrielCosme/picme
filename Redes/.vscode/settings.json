@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "stdlib.h": "c",
+        "algorithm": "c",
+        "istream": "c",
+        "limits": "c",
+        "sstream": "c",
+        "type_traits": "c",
+        "random": "c"
+    }
+}
