@@ -12,13 +12,11 @@ Algoritmos disponveis:
 from . import incremental
 from . import embrulho
 from . import graham
-from . import quickhull
 
 children = [
 	['incremental', 'Incremental', 'Algoritmo Incremental'],
     ['embrulho', 'Embrulho', 'Embrulho de Presente'],
-    ['graham', 'Graham', 'Algoritmo de Graham'],
-    ['quickhull', 'Quickhull', 'QuickHull']
+    ['graham', 'Graham', 'Algoritmo de Graham']
 ]
 
 __all__ = [a[0] for a in children]
