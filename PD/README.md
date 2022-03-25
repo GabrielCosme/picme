@@ -1,6 +1,6 @@
 # Programação Dinâmica
 
-Algorítmos que utilizam o método de [Programação Dinâmica](https://pt.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_din%C3%A2mica), basedo nas aulas do curso [Análise de Algorítmos (MAC0338)](https://www.ime.usp.br/~pf/analise_de_algoritmos/aulas/dynamic-programming.html).
+Algoritmos que utilizam o método de [Programação Dinâmica](https://pt.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_din%C3%A2mica), baseado nas aulas do curso [Análise de Algoritmos (MAC0338)](https://www.ime.usp.br/~pf/analise_de_algoritmos/aulas/dynamic-programming.html).
 
 ## [Segmento de Soma Máxima](https://www.ime.usp.br/~pf/analise_de_algoritmos/aulas/max-sum-segment.html)
 
@@ -8,7 +8,7 @@ Dado um vetor de números inteiros, o problema é encontrar um segmento do vetor
 
 ## [Subsequência Crescente Máxima](https://www.ime.usp.br/~pf/analise_de_algoritmos/aulas/sscm.html)
 
-Dada uma sequência de números qualquer, o problema é encontrar sua subsequência crescente de maio tamanho. Através da Progrmação Dinâmica, foi implementado um algorítmo que resolve o problema em O(n log n).
+Dada uma sequência de números qualquer, o problema é encontrar sua subsequência crescente de maio tamanho. Através da Programação Dinâmica, foi implementado um algoritmo que resolve o problema em O(n log n).
 
 ## [Subset Sum](https://www.ime.usp.br/~pf/analise_de_algoritmos/aulas/mochila-subsetsum.html)
 
