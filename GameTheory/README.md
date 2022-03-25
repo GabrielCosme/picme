@@ -5,7 +5,7 @@ Algoritmos relacionados a [Teoria dos Jogos](https://pt.wikipedia.org/wiki/Teori
 ## [Tragédia dos Comuns](src/CommonsTrajedy)
 
 A [Tragédia dos Comuns](https://pt.wikipedia.org/wiki/Trag%C3%A9dia_dos_comuns) é uma situação na qual pessoas agindo individualmente e racionalmente atingem um resultado contrário ao bem comum.
-O código simula uma situação conhecida como Compartilhamento de Banda buscando demonstrar o conceito descrito.
+O código simula uma situação conhecida como Compartilhamento de Banda, buscando demonstrar o conceito descrito.
 
 ## [Balanceamento de Carga](src/LoadBalancing)
 
