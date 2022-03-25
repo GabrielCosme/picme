@@ -79,7 +79,6 @@ def above(a, b, P):
     return P[a].y > P[b].y or P[a].y == P[b].y and P[a].x > P[b].x
 
 def Monotone_Div(P):
-    print(P)
     global MIN_X, MAX_X
     P = P[0].vertices()
     n = len(P)
@@ -92,9 +91,6 @@ def Monotone_Div(P):
 
     T = None
     dcel = DCEL(P)
-
-    # for face in dcel.findFaces():
-    #     print(face)
 
     for k in range(n):
         v = E[k]
@@ -116,5 +112,4 @@ def Monotone_Div(P):
         control.sleep()
 
     for face in dcel.findFaces():
-        print(face)
         Monotone(face)

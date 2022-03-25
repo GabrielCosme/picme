@@ -1,7 +1,6 @@
 from geocomp.common.prim import intersect
 from geocomp.common.segment import Segment
 from geocomp.common import control
-from geocomp import config
 from geocomp.lineintersections.bst import *
 
 MIN_Y = MAX_Y = 0
@@ -9,7 +8,6 @@ MIN_Y = MAX_Y = 0
 def delete_lines(ids):
     for id in ids:
         control.plot_delete(id)
-    control.sleep()
 
 def plot_vertical_line(x, color="green"):
     return control.plot_segment(x, MIN_Y, x, MAX_Y, color=color)
@@ -34,11 +32,7 @@ def Sweepline(l):
     for p in range(len(e)):
         i = e[p][1]
 
-        id = plot_vertical_line(e[p][0].x, "yellow")
-        control.sleep()
-
-        printTree(root)
-        print("-------------")
+        id = plot_vertical_line(e[p][0].x, "blue")
 
         pred = predecessor(root, e[p][0], func=lambda k: l[k])
         succ = successor(root, e[p][0], func=lambda k: l[k])
@@ -70,10 +64,8 @@ def Sweepline(l):
                 delete_lines(ids)
 
         control.plot_delete(id)
-        control.sleep()
 
-    printTree(root)
-
+    control.plot_delete(id)
     seg = Segment()
     seg.extra_info = "Intersecta" if out else "Não Intersecta"
     return seg
