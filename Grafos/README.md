@@ -4,11 +4,11 @@ Algoritmos relacionados a [Grafos](https://pt.wikipedia.org/wiki/Teoria_dos_graf
 
 ## [Grafos Topológicos](https://www.ime.usp.br/~pf/algoritmos_para_grafos/aulas/topo-graphs.html)
 
-Um grafo dirigido (dígrafo) é topológico se admite uma numeração topológica dos vértices. Uma numeração topo[] dos vértices é topológica se topo[v] < topo[w] para todo arco v-w. São apresentados dois algoritmos para realizar a numeração: Um "ao pé da letra" com complexidade V²(V + A), e outro que utiliza uma fila, e possui complexidade V + A.
+Um grafo dirigido (dígrafo) é topológico se admite uma numeração topológica dos seus vértices. Uma numeração topo[] dos vértices é topológica se topo[v] < topo[w] para todo arco v-w. São apresentados dois algoritmos para realizar a numeração: Um "ao pé da letra" com complexidade V²(V + A), e outro que utiliza uma fila, e possui complexidade V + A.
 
 ## [Busca em Profundidade (DFS)](https://www.ime.usp.br/~pf/algoritmos_para_grafos/aulas/dfs.html)
 
-Depth First Search é um algoritmo que visita todos os vértices de um dígrafo e os numera em relação à ordem que foram visitados. Esta busca foi utilizada para definir se um grafo dirigido possui ciclos ou se é um dígrafo acíclico (dag, do inglês, directed acyclic graph), utilizando tanto a numeração prévia quanto a "on the fly" com complexidade linear.
+Depth First Search é um algoritmo que visita todos os vértices de um dígrafo e os numera em relação à ordem que foram visitados. Esta busca foi utilizada para definir se um grafo dirigido possui ciclos ou se é um dígrafo acíclico (dag, do inglês, directed acyclic graph), utilizando tanto a numeração prévia quanto a "on the fly", ambos com complexidade linear.
 
 ## [Componentes Conexos](https://www.ime.usp.br/~pf/algoritmos_para_grafos/aulas/components.html)
 
@@ -24,4 +24,4 @@ Uma coloração válida de um grafo é uma de atribuição de uma cor a cada vé
 
 ## [Custos nos Arcos e Arestas](https://www.ime.usp.br/~pf/algoritmos_para_grafos/aulas/weightedgraphs.html)
 
-Foi abordado o problema da Árvore Geradora de Custo Mínimo (MST), utilizando o Algoritmo de Prim e o algoritmo de Kruskal para sua solução. Também foi tratado o problema do caminho mínimo, para o qual foram implementados os algoritmos de Bellman-Ford e de Dijkstra.
+Foi abordado o problema da Árvore Geradora de Custo Mínimo (MST), utilizando o Algoritmo de Prim e o Algoritmo de Kruskal para sua solução. Também foi tratado o problema do caminho mínimo, para o qual foram implementados o Algoritmo de Bellman-Ford e o Algoritmo de Dijkstra.
