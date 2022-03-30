@@ -1,6 +1,8 @@
 # Geometria Computacional
 
-Algoritmos que visam resolver problemas geométricos em um plano 2D com a melhor eficiência possível. Foram baseados no texto que acompanhou o curso [Convite a Geometria Computacional](https://www.ime.usp.br/~cris/jai2009/), também foram utilizadas referências da matéria MAC5747 - Geometria Computacional.
+Algoritmos que visam resolver problemas geométricos em um plano 2D com a melhor eficiência possível. Foram baseados no texto que acompanhou o curso [Convite a Geometria Computacional](https://www.ime.usp.br/~cris/jai2009/), também foram utilizadas referências da matéria MAC0331 - Geometria Computacional.
+
+Para melhor visualização dos algoritmos, foi utilizada a plataforma do Alexis Sakurai Landgraf, desenvolvida em um dos oferecimentos da disciplina MAC0331 - Geometria Computacional. 
 
 ## Par de Pontos mais próximos
 
@@ -74,11 +76,16 @@ Percorre ciclicamente os vertices adjacentes no polígono em busca de pontas de 
 
 ### Algoritmo N2
 
+Semelhante ao algoritmo N3, mas utiliza uma lista ligada para armazenar os vértices e marca as orelhas já no início do algoritmo, reduzindo a complexidade total para O(n²).
 
+![](assets/triang-n2.gif)
 
 ### Triangulação de Polígonos Monótonos
 
+Um polígono é monótono em relação a uma reta L se é conexo para toda reta perpendicular a L. Se L é o eixo y, dizemos que o polígono é y-monótono. O algoritmo funciona realizando a divisão em polígonos y-monótonos e depois triangulando cada um deles, atingindo uma complexidade O(n log n).
+
+![](assets/triang-mono.gif)
 
 ## Como Executar
 
-
+Para executar as simulações, rode o comando `python3 tkgeocomp.py` no terminal. Uma interface gráfica será aberta, onde você poderá escolher o conjunto de dados e o algoritmo que será executado. Para mais detalhes, veja o [README da plataforma](src/README.md).
