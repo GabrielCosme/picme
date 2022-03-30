@@ -4,4 +4,4 @@ Algoritmos relacionados a [Fluxos em Redes](https://pt.wikipedia.org/wiki/Rede_d
 
 ## Fluxo Máximo
 
-O fluxo é um valor positivo atribuído a cada aresta de um grafo, de forma que a quantidade de fluxo que entra em uma aresta deve ser igual à quantidade que sai. O problema consiste em calcular o valor máximo de fluxo em cada aresta respeitando suas respectivas capacidades. Como solução, foram implementados algoritmos que utilizam caminhos aumentadores mínimos e caminhos aumentadores de máxima capacidade, além de filas comuns e de prioridade.
+O fluxo é um valor positivo atribuído a cada aresta de um grafo, de forma que a quantidade de fluxo que entra em um vértice deve ser igual à quantidade que sai, exceto nos vértices inicial e final. O problema consiste em calcular o valor máximo de fluxo em cada aresta respeitando suas respectivas capacidades. Como solução, foram implementados algoritmos que utilizam caminhos aumentadores mínimos e caminhos aumentadores de máxima capacidade, além de filas e filas de prioridade.
