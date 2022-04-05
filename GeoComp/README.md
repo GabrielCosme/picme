@@ -4,7 +4,7 @@ Algoritmos que visam resolver problemas geométricos em um plano 2D com a melhor
 
 Para melhor visualização dos algoritmos, foi utilizada a plataforma do Alexis Sakurai Landgraf, desenvolvida em um dos oferecimentos da disciplina MAC0331 - Geometria Computacional.
 
-## Par de Pontos mais próximos
+## Par de Pontos Mais Próximos
 
 Dado um conjunto de n pontos, o algoritmo deve encontrar o par mais próximo. Este problema tem aplicações em controle de tráfego aéreo ou marítimo, onde pode-se querer saber quais são os objetos mais próximos para se detectar potenciais colisões.
 
@@ -16,11 +16,11 @@ Calcula todas as possíveis distâncias entre os pontos e armazena a menor calcu
 
 ### Algoritmo de Shamos e Hoey
 
-Divide o plano em 2 recursivamente de forma semelhante a um merge sort, calculando a menor distância entre os pontos de uma mesma divisão e das divisões adjacentes, enquanto armazena a menor das 3 distâncias. Possui complexidade O(n log n).
+Divide o plano em dois, calcula recursivamente a menor distância em cada uma das duas partes, encontra a menor distância entre um ponto de uma parte e um da outra parte, e devolve a menor dentre estas três distâncias. Possui complexidade O(n log n).
 
 ![](assets/dist-sh.gif)
 
-## Fecho convexo de um conjunto de Pontos
+## Fecho Convexo de um Conjunto de Pontos
 
 Dado um conjunto de n pontos, o algoritmo deve encontrar o menor polígono convexo que cobre todos esses pontos. Uma aplicação deste problema se encontra em robótica, onde se deseja evitar que um robô em movimento colida com outros objetos.
 
@@ -48,7 +48,7 @@ Dada uma coleção de n segmentos no plano, o algoritmo deve decidir se existem 
 
 ### Algoritmo Elementar
 
-Padroniza os segmentos para terem sempre o primeiro ponto à esquerda e depois testa todas as possibilidades de interseções entre os segmentos. Possui complexidade O(n²).
+Testa se há interseção entre todos os possíveis pares de segmentos da coleção. Possui complexidade O(n²).
 
 ![](assets/intersec-brute.gif)
 
@@ -60,29 +60,29 @@ Utiliza uma linha de varredura que percorre o plano da esquerda para a direita, 
 
 ## Triangulação de Polígonos
 
-Dado um polígono formado por n vértices, o algoritmo deve encontrar o conjunto de triângulos que formam o polígono, sem nenhuma interseção de arestas. Pode ser aplicada na simplificação de modelos 3D, reduzindo o tempo de processamento em renderizações.
+Dado um polígono formado por n vértices, o algoritmo deve encontrar um conjunto de diagonais que particiona o polígono. Sendo que uma diagonal é um segmento que se encontra completamente no interior do polígono, ligando dois vértices não consecutivos. Pode ser aplicada na simplificação de modelos 3D, reduzindo o tempo de processamento em renderizações.
 
 ### Algoritmo N4
 
-Encontra uma diagonal utilizando força bruta e repete o processo recursivamente nos polígonos de cada lado da diagonal até restar somente triângulos. Possui complexidade O(n⁴).
+Encontra uma diagonal utilizando força bruta e repete o processo recursivamente nos polígonos de cada lado da diagonal até restarem somente triângulos. Possui complexidade O(n⁴).
 
 ![](assets/triang-n4.gif)
 
 ### Algoritmo N3
 
-Percorre ciclicamente os vertices adjacentes no polígono em busca de pontas de orelha, quando encontra alguma, ela é fechada com uma diagonal e o vértice é removido da lista, até que só sobre um triângulo. Possui complexidade O(n³).
+Um vértice do polígono é ponta de orelha se o segmento entre seus vizinhos na fronteira do polígono formam uma diagonal. Percorre ciclicamente os vertices adjacentes no polígono em busca de pontas de orelha, quando encontra alguma, ela é fechada com uma diagonal e o vértice é removido do polígono remanescente, até que só sobre um triângulo. Possui complexidade O(n³).
 
 ![](assets/triang-n3.gif)
 
 ### Algoritmo N2
 
-Semelhante ao algoritmo N3, mas utiliza uma lista ligada para armazenar os vértices e marca as orelhas já no início do algoritmo, reduzindo a complexidade total para O(n²).
+Semelhante ao algoritmo N3, mas utiliza uma lista ligada para armazenar os vértices e marca as pontas de orelha já no início do algoritmo e, ao remover uma ponta de orelha, recalcula se seus vizinhos passaram a ser pontas de orelha, reduzindo a complexidade total para O(n²).
 
 ![](assets/triang-n2.gif)
 
 ### Triangulação de Polígonos Monótonos
 
-Um polígono é monótono em relação a uma reta L se é conexo para toda reta perpendicular a L. Se L é o eixo y, dizemos que o polígono é y-monótono. O algoritmo funciona realizando a divisão em polígonos y-monótonos e depois triangulando cada um deles, atingindo uma complexidade O(n log n).
+Um polígono é monótono em relação a uma reta L se a interseção do polígono com qualquer reta perpendicular a L é conexa. Se L é o eixo y, dizemos que o polígono é y-monótono. O algoritmo funciona realizando a divisão em polígonos y-monótonos e depois triangulando cada um deles, atingindo uma complexidade O(n log n).
 
 ![](assets/triang-mono.gif)
 
