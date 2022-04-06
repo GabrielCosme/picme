@@ -8,7 +8,7 @@ Dada um sequência de n números inteiros, o problema é encontrar um segmento d
 
 ## [Subsequência Crescente Máxima](https://www.ime.usp.br/~pf/analise_de_algoritmos/aulas/sscm.html)
 
-Dada uma sequência de n números, o problema é encontrar sua subsequência crescente de maior tamanho. Através da Programação Dinâmica, foi implementado um algoritmo que resolve o problema em O(n log n).
+Dada uma sequência de n números, o problema é encontrar sua subsequência crescente de maior tamanho. Através da Programação Dinâmica, foi implementado um algoritmo que resolve o problema em O(n²).
 
 ## [Subset Sum](https://www.ime.usp.br/~pf/analise_de_algoritmos/aulas/mochila-subsetsum.html)
 
