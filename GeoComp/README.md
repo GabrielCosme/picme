@@ -70,7 +70,7 @@ Encontra uma diagonal utilizando força bruta e repete o processo recursivamente
 
 ### Algoritmo N3
 
-Um vértice do polígono é ponta de orelha se o segmento entre seus vizinhos na fronteira do polígono formam uma diagonal. Percorre ciclicamente os vertices adjacentes no polígono em busca de pontas de orelha, quando encontra alguma, ela é fechada com uma diagonal e o vértice é removido do polígono remanescente, até que só sobre um triângulo. Possui complexidade O(n³).
+Um vértice do polígono é ponta de orelha se o segmento entre seus vizinhos na fronteira do polígono forma uma diagonal. Percorre ciclicamente os vertices adjacentes no polígono em busca de pontas de orelha, quando encontra alguma, ela é fechada com uma diagonal e o vértice é removido do polígono remanescente, até que só sobre um triângulo. Possui complexidade O(n³).
 
 ![](assets/triang-n3.gif)
 

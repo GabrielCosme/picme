@@ -12,7 +12,7 @@ Depth First Search é um algoritmo que visita todos os vértices de um digrafo e
 
 ## [Componentes Conexos](https://www.ime.usp.br/~pf/algoritmos_para_grafos/aulas/components.html)
 
-Um grafo é conexo se cada um de seus vértices está ao alcance de cada um dos demais, e é aresta-biconexo quando existem dois caminhos sem arestas em comum ligando cada dois de seus vértices. Foram desenvolvidos algoritmos para encontrar os componentes conexos de um grafo, decidir se um grafo possui circuitos, decidir se um grafo é biconexo e encontrar seus componentes biconexos.
+Um grafo é conexo se cada um de seus vértices está ao alcance de cada um dos demais, e é aresta-biconexo quando existem dois caminhos sem arestas em comum ligando cada dois de seus vértices. Foram desenvolvidos algoritmos para encontrar os componentes conexos de um grafo, decidir se um grafo possui circuitos, decidir se um grafo é aresta-biconexo e encontrar seus componentes aresta-biconexos.
 
 ## [Conexão Forte](https://www.ime.usp.br/~pf/algoritmos_para_grafos/aulas/strong-graphs.html)
 

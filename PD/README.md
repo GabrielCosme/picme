@@ -4,7 +4,7 @@ Algoritmos que utilizam o método de [Programação Dinâmica](https://pt.wikipe
 
 ## [Segmento de Soma Máxima](https://www.ime.usp.br/~pf/analise_de_algoritmos/aulas/max-sum-segment.html)
 
-Dada um sequência de n números inteiros, o problema é encontrar um segmento da sequência que tenha soma máxima. Uma solução simples pode ser encontrada com complexidade cúbica, que pode ser otimizado através da Divisão e Conquista para O(n log n). Mas através da programação dinâmica, a complexidade pode ser reduzida para O(n).
+Dada uma sequência de n números inteiros, o problema é encontrar um segmento da sequência que tenha soma máxima. Uma solução simples pode ser encontrada com complexidade cúbica, que pode ser otimizado através da Divisão e Conquista para O(n log n). Mas através da programação dinâmica, a complexidade pode ser reduzida para O(n).
 
 ## [Subsequência Crescente Máxima](https://www.ime.usp.br/~pf/analise_de_algoritmos/aulas/sscm.html)
 
