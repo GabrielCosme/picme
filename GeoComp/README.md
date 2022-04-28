@@ -86,6 +86,16 @@ Um polígono é monótono em relação a uma reta L se a interseção do polígo
 
 ![](assets/triang-mono.gif)
 
+## Diagrama de Voronoi
+
+Dado um conjunto de n pontos, o Diagrama de Voronoi é uma partição do plano em células, de forma que cada região é associada a um dos pontos dados p e definida pelo conjunto de pontos os quais a distância ao ponto p é menor que a distância aos outros pontos dados. Tem diversas aplicações, visto que é um padrão que ocorre muito na natureza, como em polímeros e no crescimento de florestas. Além de ser útil na robótica, para encontrar rotas com menor risco de colisão.
+
+### Algoritmo de Fortune
+
+Utiliza uma linha de varredura que percorre o plano de cima para baixo e um conjunto de curvas chamado de linha de praia, definido pelas parábolas equidistantes da linha de varredura e dos pontos cujas regiões ainda estão sendo formadas. Possui uma fila de prioridade com dois tipos de eventos, um evento-ponto que ocorre ao encontrar um dos pontos dados e adiciona um arco na linha de praia, e um evento-círculo, que ocorre quando um arco some da linha de praia e indica um vértice do diagrama de Voronoi. Possui complexidade O(n log n).
+
+![](assets/fortune.gif)
+
 ## Como Executar
 
 Para executar as simulações, rode o comando `python3 tkgeocomp.py` no terminal. Uma interface gráfica será aberta, onde você poderá escolher o conjunto de dados e o algoritmo que será executado. Para mais detalhes, veja o [README da plataforma](src/README.md).
