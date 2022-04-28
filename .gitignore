@@ -226,3 +226,4 @@ dkms.conf
 *.dis
 
 largeEWD.txt
+settings.json

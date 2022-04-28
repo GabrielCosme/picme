@@ -138,10 +138,10 @@ def set_skip (val):
 
 ################### ANDREW E EDUARDO MUDARAM #######################
 
-def plot_curve (xy, color=config.COLOR_LINE, linewidth = config.LINEWIDTH):
+def plot_curve (x, y, color=config.COLOR_LINE, linewidth = config.LINEWIDTH):
 	"""desenha uma curva com uma lista de coordenadas xy"""
 	if skip: return 0
-	plot_id = gui.plot_curve (xy, color, linewidth)
+	plot_id = gui.plot_curve (x, y, color, linewidth)
 	update ()
 	return plot_id
 

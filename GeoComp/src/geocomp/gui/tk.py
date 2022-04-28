@@ -219,10 +219,10 @@ def plot_circle (x, y, color, r):
 	plot_id = canvas.create_oval (canvas.r2cx(x-r), canvas.r2cy(y-r),
 	canvas.r2cx(x+r), canvas.r2cy(y+r), outline=color)
 	return plot_id
-def plot_curve (xy, color, linewidth):
+def plot_curve (x, y, color, linewidth):
 	canvas_xy = []
-	for i in range(len(xy)//2):
-		canvas_xy += [canvas.r2cx(xy[i]), canvas.r2cy(xy[i+1])]
+	for i in range(len(x)):
+		canvas_xy += [canvas.r2cx(x[i]), canvas.r2cy(y[i])]
 	lineto_id = canvas.create_line (canvas_xy, fill=color, width=linewidth)
 	return lineto_id
 
