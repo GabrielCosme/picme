@@ -59,7 +59,10 @@ def show(voronoi):
     plot_beach_line(voronoi)
     plots.append(control.plot_segment(min_x, float(sweep_line), max_x, float(sweep_line)))
     
+    control.thaw_update()
+    control.update()
     control.sleep()
+    control.freeze_update()
         
     for plot in plots:
         control.plot_delete(plot)
