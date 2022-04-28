@@ -74,14 +74,14 @@ def plot_edge(edge, sweep_line):
     end = edge.twin.get_origin(sweep_line)
 
     if not (start and end):
-        return self
+        return
 
     # Draw the line
     lines.append(Segment(Point(start.x, start.y), Point(end.x, end.y)))
     lines[-1].hilight()
 
 def plot_beach_line(voronoi):
-    global min_x, max_x, min_y, max_y
+    global min_x, max_x, max_y
 
     arcs = voronoi.arcs
     sweep_line = voronoi.sweep_line
